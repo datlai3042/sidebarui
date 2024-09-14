@@ -1,10 +1,9 @@
-import React from 'react'
-import MinimizeLayout from '../MinimizeLayout'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
-import { SIZE_ICON } from '../..'
-import { SlCalender } from 'react-icons/sl'
-import { RiErrorWarningLine } from 'react-icons/ri'
 import { MdOutlineAccessTime } from 'react-icons/md'
+import { RiErrorWarningLine } from 'react-icons/ri'
+import { SlCalender } from 'react-icons/sl'
+import { SIZE_ICON } from '../..'
+import MinimizeLayout from '../MinimizeLayout'
 
 const getNameDateVnmese = (date: number) => {
       let nameDate = ''

@@ -1,6 +1,5 @@
-import React from 'react'
-import MinimizeLayout from '../../../admin/ui/MinimizeLayout'
 import styles from '../../../admin/css/admin.module.css'
+import MinimizeLayout from '../../../admin/ui/MinimizeLayout'
 
 const mock_data = [
       {

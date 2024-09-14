@@ -1,4 +1,3 @@
-import React from 'react'
 import MinimizeLayout from '../MinimizeLayout'
 
 const field_list = [

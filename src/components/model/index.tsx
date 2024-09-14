@@ -18,7 +18,7 @@ type ModelContainerProps = {
 }
 
 export const ModelContainer = (props: ModelContainerProps) => {
-      const { children, center = false, setShowModel } = props
+      const { children, center = false } = props
 
       const styleEffect = {
             setCenterModel: () => {

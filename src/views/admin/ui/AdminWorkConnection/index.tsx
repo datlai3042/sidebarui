@@ -126,7 +126,7 @@ const mockData: AdminWork[] = [
 ]
 
 const AdminConnectionWork = () => {
-      const [action, setAction] = useState<ModeFilter>('Filter')
+      const [, setAction] = useState<ModeFilter>('Filter')
 
       return (
             <MinimizeLayout

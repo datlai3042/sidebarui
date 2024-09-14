@@ -1,8 +1,7 @@
-import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import AccountPage from './pages/account'
 import AdminPage from './pages/admin'
 import NotificationPage from './pages/notification'
-import AccountPage from './pages/account'
 import NotFoundView from './views/not-found'
 
 const RouterWrapper = () => {

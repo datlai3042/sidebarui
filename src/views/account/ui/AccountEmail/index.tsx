@@ -1,8 +1,7 @@
-import React from 'react'
-import MinimizeLayout from '../../../admin/ui/MinimizeLayout'
 import step1 from '../../../../assets/images/account_email/step1.svg'
 import step2 from '../../../../assets/images/account_email/step2.svg'
 import step3 from '../../../../assets/images/account_email/step3.svg'
+import MinimizeLayout from '../../../admin/ui/MinimizeLayout'
 
 const AccountEmailCore = () => {
       return (

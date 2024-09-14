@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import MinimizeLayout from '../MinimizeLayout'
-import { ModeFilter } from '../AdminWork'
+import { useState } from 'react'
 import { CiFilter } from 'react-icons/ci'
-import { SIZE_ICON } from '../..'
 import { MdRefresh } from 'react-icons/md'
 import { SiAmazondocumentdb } from 'react-icons/si'
+import { SIZE_ICON } from '../..'
+import { ModeFilter } from '../AdminWork'
+import MinimizeLayout from '../MinimizeLayout'
 
 const AdminPropose = () => {
-      const [action, setAction] = useState<ModeFilter>('Filter')
+      const [, setAction] = useState<ModeFilter>('Filter')
 
       const ElementData = () => {
             return (
