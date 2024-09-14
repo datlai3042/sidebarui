@@ -1,0 +1,27 @@
+.container {
+      position: fixed;
+      top: var(--heightHeader);
+
+      height: var(--heightHeader);
+      padding: 0rem 1.6rem;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      overflow-x: auto;
+}
+
+.container--large {
+      left: var(--widthSidebarSmall);
+      width: calc(100vw - var(--widthSidebarSmall));
+}
+
+.container--small {
+      left: var(--widthSidebarLarge);
+      width: calc(100vw - var(--widthSidebarLarge));
+}
+
+.notification__type {
+      width: max-content;
+      height: 100%;
+      gap: 2rem;
+}

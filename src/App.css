@@ -1,0 +1,20 @@
+#main {
+      display: flex;
+}
+
+.right-layout {
+      min-height: 100vh;
+      padding-bottom: 2rem;
+}
+
+.right-layout-large {
+      margin-left: var(--widthSidebarSmall);
+      width: calc(100% - var(--widthSidebarSmall));
+}
+
+.right-layout-small {
+      margin-left: var(--widthSidebarLarge);
+      width: calc(100% - var(--widthSidebarLarge));
+}
+
+

@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+      --bg-primary: #edf2f8;
+      --heightHeader: 6rem;
+
+      --sidebar-item-text-color: #768285;
+      --color-theme: rgb(251, 105, 0);
+      --bg-item-hover: rgb(251 105 0 / 8%);
+      --space-admin-page-content: 1.4rem;
+      --padding-x-admin-section: 1.6rem;
+      --border-radius-table: 0.6rem;
+      --heightMinimizeLayout: 10rem;
+}
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+html {
+      font-size: 62.5%;
+}
+
+body {
+      font-size: 1.4rem;
+      background-color: var(--bg-primary);
+}
+
+a {
+      text-decoration: none;
+      color: #000;
+}
+
+.navItem {
+      min-width: 4rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      color: var(--sidebar-item-text-color);
+}
+
+.navItem:hover {
+      background-color: rgb(251 105 0 / 8%);
+      color: var(--color-theme);
+}
+
+/*
+      scroll-color-theme
+*/
+
+.hidden-scroll::-webkit-scrollbar {
+      display: none;
+}
+
+.scroll::-webkit-scrollbar {
+      width: 1rem;
+      height: 0.4rem;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+      background-color: var(--color-theme);
+}
+
+/*
+      layout minimize
+*/
+
+.minimize__container {
+      height: auto;
+      max-width: 100%;
+      background-color: #fff;
+      border-radius: 0.8rem;
+}
+
+.minimize__header > .minimize__action {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: var(--sidebar-item-text-color);
+}
+
+.minimize__wrapper {
+      max-width: 100%;
+      max-height: 100%;
+      overflow: auto;
+}
+
+.button-color-theme {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+}
+
+@media screen and (min-width: 1025px) {
+      .content__wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+      }
+
+      .content__left {
+            width: 66%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-x-admin-section);
+      }
+
+      .content__right {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-x-admin-section);
+      }
+}
+
+@media screen and (min-width: 768px) {
+      :root {
+            --widthSidebarLarge: 23rem;
+            --widthSidebarSmall: 8rem;
+            --paddingSidebar: 1.8rem 1.3rem;
+      }
+
+      .minimize__header {
+            --heightMinimizeLayout: 4.4rem;
+
+            height: var(--heightMinimizeLayout);
+            padding: 2rem var(--padding-x-admin-section);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 0.1rem solid #e9e2e2;
+            background-color: #fff;
+      }
+
+      .minimize__header > .minimize__title {
+            font-weight: 500;
+            font-size: 1.35rem;
+      }
+}
+
+@media screen and (max-width: 1024px) {
+      .content__wrapper {
+            /* box-shadow: 0 0 2px 0 #bdbdbd; */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            /* justify-content: space-between; */
+      }
+
+      .content__left {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-x-admin-section);
+      }
+
+      .content__right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-x-admin-section);
+      }
+}
+
+@media screen and (max-width: 767px) {
+      :root {
+            --widthSidebarLarge: 16rem;
+            --widthSidebarSmall: 9rem;
+            --paddingSidebar: 1.5rem 1rem;
+      }
+
+      .minimize__header {
+            --heightMinimizeLayout: 5rem;
+
+            height: var(--heightMinimizeLayout);
+
+            padding: 1rem var(--padding-x-admin-section);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            border-bottom: 0.1rem solid #e9e2e2;
+            background-color: #fff;
+      }
+
+      .minimize__header > .minimize__title {
+            margin-left: 1rem;
+            font-weight: 500;
+            font-size: 1.5rem;
+      }
+}

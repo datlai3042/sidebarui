@@ -1,0 +1,3 @@
+.content__container {
+      padding-top: calc(var(--heightHeader) + var(--space-admin-page-content));
+}

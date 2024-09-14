@@ -1,0 +1,110 @@
+.content__container {
+      margin-top: calc(var(--heightHeader) + var(--space-admin-page-content));
+}
+
+.work__core {
+      
+      width: max-content;
+}
+
+.work__table {
+      padding: 0rem var(--padding-x-admin-section);
+      border-collapse: separate !important;
+      border-spacing: 0rem 1.2rem;
+      min-width: 95rem;
+}
+
+.table__row {
+      height: 8.5rem;
+
+}
+
+.work__table th {
+      font-weight: 500;
+      color: var(--sidebar-item-text-color);
+      width: 19%;
+}
+
+.work__table th {
+      padding: 0.6rem 1.2rem;
+      text-align: left;
+      font-size: 1.2rem;
+}
+.work__table td {
+      padding: .6rem 1.8rem;
+      text-align: left;
+      font-size: 1.4rem;
+}
+
+.table__header > th:nth-child(2) {
+      width: 43%;
+      /* background-color: red; */
+}
+
+.table__row > td {
+      border: 0.1rem solid #e9e2e2;
+      border-left: none;
+      border-right: none;
+}
+
+.table__row > td:nth-child(1) {
+      border: 0.1rem solid #e9e2e2;
+
+      border-collapse: collapse;
+      border-right: none;
+      border-radius: var(--border-radius-table) 0 0 var(--border-radius-table);
+}
+
+.table__row > td:last-child {
+      border: 0.1rem solid #e9e2e2;
+      border-left: none;
+      border-radius: 0rem var(--border-radius-table) var(--border-radius-table) 0rem;
+}
+
+@media screen and (min-width: 768px) {
+      .content__wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+      }
+
+      .content__left {
+            width: 64%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-x-admin-section);
+      }
+
+      .content__right {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-x-admin-section);
+      }
+}
+
+@media screen and (max-width: 767px) {
+      .content__wrapper {
+            /* box-shadow: 0 0 2px 0 #bdbdbd; */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            /* justify-content: space-between; */
+      }
+
+      .content__left {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-x-admin-section);
+      }
+
+      .content__right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-x-admin-section);
+      }
+}
