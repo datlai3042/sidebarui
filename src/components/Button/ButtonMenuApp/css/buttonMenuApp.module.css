@@ -1,0 +1,63 @@
+
+
+
+
+
+
+.container__menu {
+      background-color: #fff;
+      min-width: 120rem;
+      border-radius: var(--borderRadiusMenuApp);
+      min-height: 13rem;
+      display: flex;
+      flex-direction: column;
+}
+
+.menu__btn {
+      min-height: 5rem;
+      color: #a5a5a5;
+      font-weight: 700;
+      border-bottom: 0.2rem solid transparent;
+}
+
+.menu__mode--active {
+      border-bottom: 0.2rem solid var(--color-theme);
+}
+
+/*
+      menu-use-ful
+*/
+
+.menu__useful {
+      min-height: 100%;
+      padding-left: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+/*
+      menu-all
+*/
+
+.menu__all {
+      padding: 1rem 1.8rem;
+      width: 100%;
+}
+
+.menu-all-wrapper {
+      width: 100%;
+      max-height: 48rem;
+      overflow: auto;
+}
+
+.menu-all-wrapper::-webkit-scrollbar {
+      width: 0.8rem;
+}
+
+.menu-all-wrapper::-webkit-scrollbar-thumb {
+      background-color: #e9e9e9;
+      border-radius: 1rem;
+}
+
+

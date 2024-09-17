@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App.tsx'
 import SidebarProvider from './context/SidebarContext.tsx'
 import './index.css'
+import './styles/menu_navigation.css'
 import RouterWrapper from './router.tsx'
 
 createRoot(document.getElementById('root')!).render(

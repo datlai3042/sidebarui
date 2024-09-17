@@ -13,6 +13,7 @@
       --padding-x-admin-section: 1.6rem;
       --border-radius-table: 0.6rem;
       --heightMinimizeLayout: 10rem;
+      --borderRadiusMenuApp: 1rem;
 }
 
 * {
@@ -186,8 +187,6 @@ a {
             padding: 1rem var(--padding-x-admin-section);
             display: flex;
             align-items: center;
-            flex-wrap: wrap;
-            /* flex-direction: column; */
             justify-content: space-between;
             border-bottom: 0.1rem solid #e9e2e2;
             background-color: #fff;

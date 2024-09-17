@@ -12,14 +12,12 @@ const HeaderActionItem = (props: HeaderActionItem) => {
 
       const [showModel, setShowModel] = useState<boolean>(false)
 
-   
-
       return (
             <>
                   <button
                         title={title}
                         key={title}
-                        className={styles.header__navItem}
+                        className={`${styles.header__navItem} relative`}
                         onClick={() => {
                               if (Model) {
                                     setShowModel((prev) => !prev)

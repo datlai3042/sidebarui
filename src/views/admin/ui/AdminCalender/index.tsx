@@ -47,11 +47,11 @@ const AdminCalenderMini = () => {
       return (
             <div
                   style={{ padding: 'var(--padding-x-admin-section)' }}
-                  className='flex flex-col sm:flex-row h-full gap-[1rem] scroll'
+                  className='flex flex-col xl:flex-row justify-between h-full gap-[1rem] scroll'
             >
                   <div
-                        style={{ padding: 'var(--padding-x-admin-section' }}
-                        className='bg-[#fcf0f2] w-full sm:w-[30%] h-full flex flex-col justify-between rounded-lg'
+                        style={{ padding: 'var(--padding-x-admin-section)' }}
+                        className='bg-[#fcf0f2] w-full xl:w-[30%] h-full flex flex-col justify-between rounded-lg'
                   >
                         <div className='w-full flex justify-between '>
                               <span className='text-slate-800 text-[1.3rem]'>Giờ vào</span>
@@ -61,8 +61,8 @@ const AdminCalenderMini = () => {
                         <span className='text-[1.4rem] opacity-65'>Chưa check in</span>
                   </div>
                   <div
-                        style={{ padding: 'var(--padding-x-admin-section' }}
-                        className='bg-[#fdf9ed] w-full sm:w-[30%] h-full flex flex-col justify-between rounded-lg'
+                        style={{ padding: 'var(--padding-x-admin-section)' }}
+                        className='bg-[#fdf9ed] w-full xl:w-[30%] h-full flex flex-col justify-between rounded-lg'
                   >
                         <div className='w-full flex justify-between '>
                               <span className='text-slate-800 text-[1.3rem]'>Giờ về</span>
@@ -72,8 +72,8 @@ const AdminCalenderMini = () => {
                         <span className='text-[1.4rem] opacity-65'>Chưa đến giờ</span>
                   </div>
                   <div
-                        style={{ padding: 'var(--padding-x-admin-section' }}
-                        className='bg-[#e1fdff] w-full sm:w-[25%] h-full flex flex-col items-center justify-between rounded-lg'
+                        style={{ padding: 'var(--padding-x-admin-section)' }}
+                        className='bg-[#e1fdff] w-full xl:w-[30%] h-full flex flex-col items-center justify-between rounded-lg'
                   >
                         <div className='w-full flex justify-center items-center gap-[1rem]'>
                               <MdOutlineAccessTime size={14} />

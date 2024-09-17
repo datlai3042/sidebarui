@@ -6,12 +6,12 @@ export type TSidebarContext = {
 }
 
 export const SidebarContext = createContext<TSidebarContext>({
-      openSidebar: true,
+      openSidebar: false,
       setOpenSidebar: () => {}
 })
 
 const SidebarProvider = ({ children }: { children: React.ReactNode }) => {
-      const [openSidebar, setOpenSidebar] = useState<boolean>(true)
+      const [openSidebar, setOpenSidebar] = useState<boolean>(false)
 
    
 
